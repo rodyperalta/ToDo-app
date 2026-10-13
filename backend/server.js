@@ -6,11 +6,7 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 
-app.use(
-  cors({
-    origin: ["http://localhost:5000", "http://localhost:5173"],
-  }),
-);
+app.use(cors());
 app.use(express.json());
 
 mongoose
